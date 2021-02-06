@@ -25,3 +25,11 @@ Usage Examples
 -min_g(optional) : (Default is 20) Minimum patients size for each subgroup of pairwise KM survival analysis<br>
 -min_e(optional) : (Default is 5)  Minimum patients with events for each subgroup<br>
 
+Output
+--------------
+    ./output/snp_drug_interaction_cox.txt
+            /snp_drug_interaction_cox_filtered.txt
+            /KM.subgroup.txt
+            /KM.subgroup.fdr.txt
+            /KM.subgroup.fdr.filter.txt
+      
