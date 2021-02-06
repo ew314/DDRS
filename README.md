@@ -1,6 +1,6 @@
 DDRS: Detection of Drug Response SNPs Specifically in Patients Receiving Drug Treatment
 ================================
-This repository includes an approach to identify drug-response associated SNPs from clinical patients’ follow-up data by integrating cox proportional hazards model and Kaplan-Meier survival analysis. 
+This repository includes an approach to identify drug-response associated SNPs from clinical patients’ follow-up data by integrating cox proportional hazards model and Kaplan-Meier survival analysis. By using those patients didn’t receive any drug treatment as control, those prognosis correlated SNPs even without drug treatment were filtered out, and only focus on SNPs related to drug response.
 
 ![pipeline](https://github.com/ew314/DDRS/blob/main/pipeline/4.figure.1.pipeline.github.jpg)
 
