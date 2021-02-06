@@ -13,7 +13,27 @@ Following Python packages should be installed:
 </ul>
 
 ---
-Relative activity predictor
----------------------------------
-this model is trained to predict the relative activity of mismatched sgRNA with its original matched sgRNA.<br>
-pre-trained model is https://github.com/ew314/ew314/blob/main/sgRNA_designer/seq2seq_attention/NBT_float_model_120.h5<br>
+use :
+  smartpca.perl: run PCA on input genotype data (calls smartpca)
+  smarteigenstrat.perl: run EIGENSTRAT stratification correction.  This program 
+    supports all 5 file formats, and supports quantitative phenotypes.
+  gc.perl: apply Genomic Control (Devlin and Roeder, 1999) to the
+    association statistics computed by EIGENSTRAT.
+    
+We note that the programs eigenstrat and eigenstratQTL of EIGENSOFT version 2.0
+have been replaced by smarteigenstrat.perl.  However, we have retained the old
+programs for backwards compatibility (see below).
+
+See ./example.perl and ./exampleQTL.perl for toy examples using our programs.
+
+  smartpca.perl: run PCA on input genotype data (calls smartpca)
+  smarteigenstrat.perl: run EIGENSTRAT stratification correction.  This program 
+    supports all 5 file formats, and supports quantitative phenotypes.
+  gc.perl: apply Genomic Control (Devlin and Roeder, 1999) to the
+    association statistics computed by EIGENSTRAT.
+    
+We note that the programs eigenstrat and eigenstratQTL of EIGENSOFT version 2.0
+have been replaced by smarteigenstrat.perl.  However, we have retained the old
+programs for backwards compatibility (see below).
+
+See ./example.perl and ./exampleQTL.perl for toy examples using our programs.
