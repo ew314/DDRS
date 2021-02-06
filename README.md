@@ -17,6 +17,10 @@ Getting Started
 
 Usage Examples
 --------------
-::
 
     python DDRS.py -clincal_file ./example_clinical_infor.txt -snp_file ./example_snp.inf -min_g 20 -min_e 5
+
+-clincal_file: Patients clinical file, contain patients ID, follow-up information (time and event), with drug treatment(1) or not(0)
+-snp_file: Genotype data
+-min_g(optional): Minimum patients size for each subgroup of pairwise KM survival analysis, default is 20
+-min_e(optional): Minimum patients with events for each subgroup, default is 5
