@@ -33,3 +33,9 @@ Output
             /KM.subgroup.fdr.txt
             /KM.subgroup.fdr.filter.txt
       
+---------------------------------------
+Yu Rong
+
+ew314ew@stu.xjtu.edu.cn
+
+Biomedical Informatics & Genomics Center, School of Life Science and Technology, Xi'an Jiaotong University
