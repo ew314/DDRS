@@ -2,11 +2,14 @@ DDRS: Detection of Drug Response SNPs Specifically in Patients Receiving Drug Tr
 ================================
 This repository includes an approach to identify drug-response associated SNPs from clinical patients’ follow-up data by integrating cox proportional hazards model and Kaplan-Meier survival analysis. 
 
-System Requirements and Installation
----------------------------------
-Python <br>
-pandas <br>
-lifelines <br>
+
+# PREREQUISITE
+The approach were conducted by using Python 2.7.16. 
+Following Python packages should be installed:
+<ul>
+<li><p>pandas</p></li>
+<li><p>lifelines</p></li>
+</ul>
 
 ---
 Relative activity predictor
