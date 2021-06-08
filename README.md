@@ -35,6 +35,17 @@ Output
 `-drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`      : CoxPHFitter[1] result of Drug term.<br>
 `-snp.coef,exp_coef,se_coef,z,pval,lower95,upper95`       : CoxPHFitter result of SNP term.<br>
 `-snp×drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`  : CoxPHFitter result of SNP×Drug term.<br>
+--------------
+            /KM.subgroup.txt
+            /KM.subgroup.fdr.txt
+            /KM.subgroup.fdr.filter.txt
+`-snp, snp.inf`                                         : SNP id, reference allele(0), alternative allele(1), patients number of Homozygous(reference allele),Heterozygosity and wild type(alternative allele)<br>
+`1.ale0.drug.used`
+`2.ale1.drug.used`
+`3.ale2.drug.used`
+`4.ale0.drug.used.not`
+`5.ale1.drug.used.not`
+`6.ale2.drug.used.not`
 
 
 2.DRS calculation
