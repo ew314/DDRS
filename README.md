@@ -36,7 +36,7 @@ Output
 `-drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`      : CoxPHFitter[1] result of Drug term.<br>
 `-snp.coef,exp_coef,se_coef,z,pval,lower95,upper95`       : CoxPHFitter result of SNP term.<br>
 `-snp×drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`  : CoxPHFitter result of SNP×Drug term.<br>
---------------
+
             /KM.subgroup.txt
             /KM.subgroup.fdr.txt
             /KM.subgroup.fdr.filter.txt
