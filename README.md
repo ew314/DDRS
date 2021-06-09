@@ -41,7 +41,7 @@ Output
             /KM.subgroup.fdr.txt
             /KM.subgroup.fdr.filter.txt
 `-snp, snp.inf`                                         : SNP id, reference allele(0), alternative allele(1), patients number of Homozygous(reference allele),Heterozygosity and wild type(alternative allele)<br>
-`1.ale0.drug.used,2.ale1.drug.used,3.ale2.drug.used,4.ale0.drug.used.not,5.ale1.drug.used.not,6.ale2.drug.used.not`: patients numbers of Homozygous,Heterozygosity and wild type in 6 six subgroups<br>
+`1.WT.drug.used,2.HET.drug.used,3.HOM.drug.used,4.WT.drug.used.not,5.HET.drug.used.not,6.HOM.drug.used.not`: patients numbers of Homozygous,Heterozygosity and wild type in 6 six subgroups<br>
 `1&2.sta,1&2.pval,1&2.fdr.pval`: logrank_test[2] result between Homozygous and Heterozygosity patients with drug treatment<br>
 `1&3.sta,1&3.pval,1&3.fdr.pval`: logrank_test result between Homozygous and wild type patients with drug treatment<br>
 `2&3.sta,2&3.pval,2&3.fdr.pval`: logrank_test result between Heterozygosity and wild type patients with drug treatment<br>
@@ -56,8 +56,8 @@ Output
 
     python DDRS.SNP.identify.py -snp_file ./example_snp.inf -filter_SNP ./KM.subgroup.fdr.filter.txt
 
-*-snp_file*        : Genotype data<br>
-*-filter_SNP* : identified drug associated SNPs and cox coefficients of SNPs<br>
+`-snp_file`        : Genotype data<br>
+`-filter_SNP` : identified drug associated SNPs and cox coefficients of SNPs<br>
 
 Output
 --------------
