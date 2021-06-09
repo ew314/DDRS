@@ -32,21 +32,23 @@ Output
     ./output/snp_drug_interaction_cox.txt
             /snp_drug_interaction_cox_filtered.txt
 
-`-snp, snp.inf`                                         : SNP id, reference allele(0), alternative allele(1), patients number of Homozygous(reference allele),Heterozygosity and wild type(alternative allele)<br>
-`-drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`      : CoxPHFitter[1] result of Drug term.<br>
-`-snp.coef,exp_coef,se_coef,z,pval,lower95,upper95`       : CoxPHFitter result of SNP term.<br>
-`-snp×drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`  : CoxPHFitter result of SNP×Drug term.<br>
+`snp, snp.inf`                                         : SNP id, reference allele(0), alternative allele(1), patients number of Homozygous(reference allele),Heterozygosity and wild type(alternative allele)<br>
+`drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`      : CoxPHFitter[1] result of Drug term.<br>
+`snp.coef,exp_coef,se_coef,z,pval,lower95,upper95`       : CoxPHFitter result of SNP term.<br>
+`snp×drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`  : CoxPHFitter result of SNP×Drug term.<br>
 
             /KM.subgroup.txt
             /KM.subgroup.fdr.txt
             /KM.subgroup.fdr.filter.txt
 `-snp, snp.inf`                                         : SNP id, reference allele(0), alternative allele(1), patients number of Homozygous(reference allele),Heterozygosity and wild type(alternative allele)<br>
-`1.ale0.drug.used`
-`2.ale1.drug.used`
-`3.ale2.drug.used`
-`4.ale0.drug.used.not`
-`5.ale1.drug.used.not`
-`6.ale2.drug.used.not`
+`1.ale0.drug.used,2.ale1.drug.used,3.ale2.drug.used,4.ale0.drug.used.not,5.ale1.drug.used.not,6.ale2.drug.used.not`: patients numbers of Homozygous,Heterozygosity and wild type in 6 six subgroups<br>
+`1&2.sta,1&2.pval,1&2.fdr.pval`: logrank_test[2] result between Homozygous and Heterozygosity patients with drug treatment<br>
+`1&3.sta,1&3.pval,1&3.fdr.pval`: logrank_test result between Homozygous and wild type patients with drug treatment<br>
+`2&3.sta,2&3.pval,2&3.fdr.pval`: logrank_test result between Heterozygosity and wild type patients with drug treatment<br>
+`4&5.sta,4&5.pval,4&5.fdr.pval`: logrank_test result between Homozygous and Heterozygosity patients without drug treatment<br>
+`4&6.sta,4&6.pval,4&6.fdr.pval`: logrank_test result between Homozygous and wild type patients without drug treatment<br>
+`5&6.sta,5&6.pval,5&6.fdr.pval`: logrank_test result between Heterozygosity and wild type patients without drug treatment<br>
+`snp.coef,exp_coef,se_coef,z,pval,lower95,upper95`       : CoxPHFitter result of univariate Cox proportional hazards analysis about SNP in patients with drug treatment.<br>
 
 
 2.DRS calculation
