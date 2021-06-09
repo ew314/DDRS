@@ -31,6 +31,7 @@ Output
 --------------
     ./output/snp_drug_interaction_cox.txt
             /snp_drug_interaction_cox_filtered.txt
+
 `-snp, snp.inf`                                         : SNP id, reference allele(0), alternative allele(1), patients number of Homozygous(reference allele),Heterozygosity and wild type(alternative allele)<br>
 `-drug.coef,exp_coef,se_coef,z,pval,lower95,upper95`      : CoxPHFitter[1] result of Drug term.<br>
 `-snp.coef,exp_coef,se_coef,z,pval,lower95,upper95`       : CoxPHFitter result of SNP term.<br>
